@@ -1,36 +1,27 @@
-"""
-TESTS is a dict with all you tests.
-Keys for this will be categories' names.
-Each test is dict with
-    "input" -- input data for user function
-    "answer" -- your right answer
-    "explanation" -- not necessary key, it's using for additional info in animation.
-"""
-
-
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": [['2C', '10H', 'AD', 'KH', '4S']],
+            "answer": 37,
+            "explanation": ""
         },
         {
-            "input": [5, 7],
-            "answer": 12,
+            "input": [['9H', 'QD', 'QC', '3H', '3D', 'AC', 'AH']],
+            "answer": 57,
             "explanation": "5+7=?"
         }
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": [['7C', '8C', 'AC', '4D']],
+            "answer": 40,
+            "explanation": ""
         },
-        {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+        {"input": [ [('1', 'C'), ('4', 'H')] ], "answer": 15 , "explanation": ""},
+        {"input": [ [('2', 'S'), ('10', 'D')] ], "answer": 22 , "explanation": ""},
+        {"input": [ [('3', 'C'), ('3', 'C')] ], "answer": 31 , "explanation": ""},
+        {"input": [ [('1', 'C'), ('1', 'H'), ('1', 'D'), ('1', 'S')] ], "answer": 4 , "explanation": ""},
+        {"input": [ [('A', 'C'), ('A', 'H'), ('A', 'D'), ('A', 'S')] ], "answer": 44 , "explanation": ""},
+        {"input": [ [('1', 'A'), ('2', 'A'), ('3', 'A'), ('4', 'A'), ('5', 'A'), ('6', 'A')] ], "answer": 46 , "explanation": ""},
     ]
 }
