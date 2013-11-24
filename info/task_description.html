@@ -1,39 +1,50 @@
 <p>
-    <i>( Describe task in general )</i>
+Do you like playing card games?
+
+In this challenge, you have to calculate the value of a hand of cards. Write a function to do it. Your input is an string representing your cards (every card is represented by a value and a suit), and your output must be the total value of the set.
+</p>
+<p>
+The suits are:
+</p>
+<p>
+    C: Clubs<br>
+    D: Diamonds<br>
+    H: Hearts<br>
+    S: Spades<br>
+</p>
+<p>
+Card values are between 2 and 10. Figure values are:
+</p>
+<p>
+A = 11<br>
+J, Q, K = 10
+</p>
+<p>
+If only two suits are in the hand, add 10 points. If all cards are of the same suit, add 25 points. 
 </p>
 
 <p>
-    Sum two passed ints
-</p>
-
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
+You must develop a function to calculate the value of a hand of cards
 <p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <strong>Input: </strong> One argument, a list of string. Each string in the list starts
+    with a letter corresponding to a suit, and a number from 2 to 10 or a letter corresponding
+    to a figure.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> Int. The total value of the hand.
 </p>
 
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
+    <p><i>Some examples of the input and expected output</i></p>
     <p>
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
+hand(['2C', '10H', 'AD', 'KH', '4S']) == 37
+hand(['9H', 'QD', 'QC', '3H', '3D', 'AC', 'AH']) == 57
     </pre>
 </div>
 
-<p class="for_info_only">
-    <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
-</p>
