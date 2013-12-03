@@ -1,4 +1,4 @@
-def hand(cards):
+def checkio(cards):
     """
     Calculate the value of a hand of cards. Input: list of string, each
     string is a card. Output the integer value of the hand accoring to
@@ -7,6 +7,7 @@ def hand(cards):
     return 0
 
 if __name__ == '__main__':
-    assert hand(['2C', '10H', 'AD', 'KH', '4S']) == 37
-    assert hand(['9H', 'QD', 'QC', '3H', '3D', 'AC', 'AH']) == 57
+    assert checkio(['2C', '10H', 'AD', 'KH', '4S']) == 37
+    assert checkio(['9H', 'QD', 'QC', '3H', '3D', 'AC', 'AH']) == 57
     print('Done')
+
